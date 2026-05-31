@@ -1,0 +1,46 @@
+Title: Firewall
+
+Summary:
+Firewall may refer to:
+
+Content:
+Firewall (computing), a technological barrier designed to prevent unauthorized or unwanted communications between computer networks or hosts
+Firewall (construction), a barrier inside a building, designed to limit the spread of fire, heat and structural collapse
+Firewall (engine), the part of a vehicle that separates the engine compartment from the rest of the vehicle
+Firewall (physics), a hypothetical phenomenon where a freely falling observer spontaneously burns up at the horizon of a black hole
+Firewall (politics), also known as cordon sanitaire: the refusal of one or more political parties to cooperate with certain other political parties.
+For example, see Firewall against the far-right in Germany
+
+
+== Arts, entertainment, and media ==
+
+
+=== Music ===
+Firewall, an alias of British musician Lange (born 1974)
+"Firewall", a song by Steve Vai from the 2005 album Real Illusions: Reflections
+"Firewall", a song by Kompany from the 2019 extended play Metropolis
+
+
+=== Literature ===
+Firewall (Andy McNab novel), a Nick Stone adventure
+Firewall (Mankell novel), a 1998 novel by Henning Mankell, featuring Kurt Walland
+
+
+=== Film and television ===
+Firewall (film), a 2006 thriller film written by Joe Forte, starring Harrison Ford
+"Firewall" (Person of Interest), an episode of the American television drama series Person of Interest
+"Firewall", an episode from the Canadian animated series ReBoot
+
+
+=== Characters ===
+Firewall, a fictional character in the G.I. Joe universe
+
+
+== See also ==
+Alberta Agenda, also known as the Alberta Firewall, a political proposal for the Canadian province
+firewalld, a firewall management tool for Linux operating systems
+Great Firewall, China's internet censorship firewall
+Chinese wall, a zone of non-communication between distinct sections of a business, in order to prevent conflicts of interest
+Personal firewall, a very popular form of firewall designed to protect personal computers
+Reredos, a short wall behind a fire in a traditional hearth
+Wall of Fire (disambiguation)

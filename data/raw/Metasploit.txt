@@ -1,0 +1,113 @@
+Title: Metasploit
+
+Summary:
+The Metasploit Project is a computer security project that provides information about security vulnerabilities and aids in penetration testing and IDS signature development. It is owned by Rapid7, a Boston, Massachusetts-based security company.
+Its best-known sub-project is the open-source Metasploit Framework, a tool for developing and executing exploit code against a remote target machine.  Other important sub-projects include the Opcode Database, shellcode archive and related research.
+The Metasploit Project includes anti-forensic and evasion tools, some of which are built into the Metasploit Framework. In various operating systems it comes pre installed.
+
+Content:
+
+== History ==
+Metasploit was created by H. D. Moore in 2003 as a portable network tool using Perl.  By 2007, the Metasploit Framework had been completely rewritten in Ruby. On October 21, 2009, the Metasploit Project announced that it had been acquired by Rapid7, a security company that provides unified vulnerability management solutions.
+Like comparable commercial products such as Immunity's Canvas or Core Security Technologies' Core Impact, Metasploit can be used to test the vulnerability of computer systems or to break into remote systems. Like many information security tools, Metasploit can be used for both legitimate and unauthorized activities. Since the acquisition of the Metasploit Framework, Rapid7 has added an open core proprietary edition called Metasploit Pro.
+Metasploit's emerging position as the de facto exploit development framework led to the release of software vulnerability advisories often accompanied by a third party Metasploit exploit module that highlights the exploitability, risk and remediation of that particular bug. Metasploit 3.0 began to include fuzzing tools, used to discover software vulnerabilities, rather than just exploits for known bugs. This avenue can be seen with the integration of the lorcon wireless (802.11) toolset into Metasploit 3.0 in November 2006.
+
+
+== Framework ==
+The basic steps for exploiting a system using the Framework include:
+
+Optionally checking whether the intended target system is vulnerable to an exploit.
+Choosing and configuring an exploit (code that enters a target system by taking advantage of one of its bugs; about 900 different exploits for Windows, Unix/Linux and macOS systems are included).
+Choosing and configuring a payload (code that will be executed on the target system upon successful entry; for instance, a remote shell or a VNC server). Metasploit often recommends a payload that should work.
+Choosing the encoding technique so that hexadecimal opcodes known as "bad characters" are removed from the payload, these characters will cause the exploit to fail.
+Executing the exploit.
+This modular approach – allowing the combination of any exploit with any payload – is the major advantage of the Framework. It facilitates the tasks of attackers, exploit writers and payload writers.
+Metasploit runs on Unix (including Linux and macOS) and on Windows. The Metasploit Framework can be extended to use add-ons in multiple languages.
+To choose an exploit and payload, some information about the target system is needed, such as operating system version and installed network services. This information can be gleaned with port scanning and TCP/IP stack fingerprinting tools such as Nmap. Vulnerability scanners such as Nessus, and OpenVAS can detect target system vulnerabilities. Metasploit can import vulnerability scanner data and compare the identified vulnerabilities to existing exploit modules for accurate exploitation.
+
+
+== Interfaces ==
+There are several interfaces for Metasploit available. The most popular are maintained by Rapid7 and Strategic Cyber LLC.
+
+
+=== Metasploit Framework (Open Source Edition) ===
+The Metasploit Framework is the freely available, open-source edition of the Metasploit Project.
+It provides tools for vulnerability assessment and exploit development including:
+
+A command-line interface for controlling exploit modules.
+Database for managing scan data and exploit results.
+Import of network scan results from external scanning utilities such as Nmap.
+Scanning support using the integrated `db_nmap` feature for automated execution and data integration.
+Over 1,500 built-in exploits, with the ability of adding custom exploit modules or automated resource scripts.
+The Metasploit Framework is implemented in Ruby and uses a modular software architecture.
+
+
+=== Pro ===
+In October 2010, Rapid7 added Metasploit Pro, an open-core commercial Metasploit edition for penetration testers. Metasploit Pro adds onto Metasploit Express with features such as Quick Start Wizards/MetaModules, building and managing social engineering campaigns, web application testing, an advanced Pro Console, dynamic payloads for anti-virus evasion, integration with Nexpose for ad-hoc vulnerability scans, and VPN pivoting.
+
+
+=== Discontinued editions ===
+
+
+==== Community ====
+The edition was released in October 2011, and included a free, web-based user interface for Metasploit. Metasploit Community Edition was based on the commercial functionality of the paid-for editions with a reduced set of features, including network discovery, module browsing and manual exploitation. Metasploit Community was included in the main installer.
+On July 18, 2019, Rapid7 announced the end-of-sale of Metasploit Community Edition. Existing users were able to continue using it until their license expired.
+
+
+==== Express ====
+The edition was released in April 2010, and was an open-core commercial edition for security teams who need to verify vulnerabilities. It offers a graphical user interface, It integrated nmap for discovery, and added smart brute-forcing as well as automated evidence collection.
+On June 4, 2019, Rapid7 discontinued Metasploit Express Edition.
+
+
+=== Armitage ===
+Armitage is a graphical cyber attack management tool for the Metasploit Project that visualizes targets and recommends exploits. It is a free and open source network security tool notable for its contributions to red team collaboration allowing for shared sessions, data, and communication through a single Metasploit instance.
+The latest release of Armitage was in 2015.
+
+
+=== Cobalt Strike ===
+Cobalt Strike is a collection of threat emulation tools provided by Fortra to work with the Metasploit Framework. Cobalt Strike includes all features of Armitage and adds post-exploitation tools, in addition to report generation features.
+
+
+== Exploits ==
+Metasploit currently has over 2074 exploits, organized under the following platforms: AIX, Android, BSD, BSDi, Cisco, Firefox, FreeBSD, HP-UX, Irix, Java, JavaScript, Linux, mainframe, multi (applicable to multiple platforms), NetBSD, NetWare, NodeJS, OpenBSD, macOS, PHP, Python, R, Ruby, Solaris, Unix, and Windows.
+
+
+== Payloads ==
+Metasploit currently has over 592 payloads. Some of them are: 
+
+Command shell enables users to run collection scripts or run arbitrary commands against the host.
+Meterpreter (the Metasploit Interpreter) enables users to control the screen of a device using VNC and to browse, upload and download files.
+Dynamic payloads enable users to evade anti-virus defense by generating unique payloads.
+Static payloads enable static IP address/port forwarding for communication between the host and the client system.
+
+
+== Auxiliary modules ==
+The Metasploit Framework includes hundreds of auxiliary modules that can perform scanning, fuzzing, sniffing, and much more. There are three types of auxiliary modules namely scanners, admin and server modules.
+
+
+== Contributors ==
+Metasploit Framework operates as an open-source project and accepts contributions from the community through GitHub.com pull requests. Submissions are reviewed by a team consisting of both Rapid7 employees and senior external contributors. The majority of contributions add new modules, such as exploits or scanners.
+List of original developers:
+
+H. D. Moore (founder and chief architect)
+Matt Miller (core developer from 2004–2008)
+Dean McNamee (Spoonm) (core developer from 2003–2008)
+
+
+== See also ==
+
+w3af
+OWASP Open Web Application Security Project
+
+
+== References ==
+
+
+== Further reading ==
+Powerful payloads: The evolution of exploit frameworks, searchsecurity.com, 2005-10-20
+Chapter 12: Writing Exploits III from Sockets, Shellcode, Porting & Coding: Reverse Engineering Exploits and Tool Coding for Security Professionals by James C. Foster (ISBN 1-59749-005-9). Written by Vincent Liu, chapter 12 explains how to use Metasploit to develop a buffer overflow exploit from scratch.
+
+
+== External links ==
+
+Official website

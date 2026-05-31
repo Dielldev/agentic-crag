@@ -1,0 +1,70 @@
+Title: Burp Suite
+
+Summary:
+Burp Suite is a proprietary software tool for security assessment and penetration testing of web applications. It was initially developed in 2003–2006 by Dafydd Stuttard to automate his own security testing needs, after realizing the capabilities of automatable web tools like Selenium. Stuttard created the company PortSwigger to flagship Burp Suite's development. A community, professional, and enterprise version of this product are available.
+Notable capabilities in this suite include features to proxy web-crawls (Burp Proxy), log HTTP requests/responses (Burp Logger and HTTP History), capture/intercept in-motion HTTP requests (Burp Intercept), and aggregate reports which indicate weaknesses (Burp Scanner). This software uses a built-in database containing known-unsafe syntax patterns and keywords to search within captured HTTP requests/responses.
+Burp Suite possesses several penetration-type functionalities. A few built-in PoC services include tests for HTTP downgrade, interaction with tool-hosted external sandbox servers (Burp Collaborator), and analysis for pseudorandomization strength (Burp Sequencer). This tool permits integration of user-defined functionalities through download of open-source plugins (such as Java Deserialization Scanner and Autorize).
+
+Content:
+
+== Features ==
+As a web security analyzer, Burp Suite offers several built-in features designed to assist testers in auditing their  web applications.
+
+
+=== Community Edition ===
+
+The Community Edition version of Burp Suite includes the following features.
+
+Burp Proxy and Interceptor: Like other web application security scanners, one of the primary functionalities behind Burp Suite is its capability to act as a proxy server for client-side HTTP requests. Penetration testers can intercept web servers' default HTTP requests variables (attributes, body parameters, cookies, headers) in real-time and edit these values on-the-fly.
+Burp Site Map: BurpSuite operates similarly to the OWASP ZAP software, wherein target URLs' site maps can be captured either through automatic or manual web-crawling. When users crawl through a web application, HTTP requests become sent to a web proxy in Burp Suite's software. Once HTTP requests/responses are captured, these endpoints can be investigated manually or audited automatically through features in Burp Suite's Professional edition.
+Burp Logger and HTTP History: Retains a list of HTTP requests/responses captured during web-crawling (and automated scanning for Professional edition).
+Burp Repeater: Repeats captured HTTP requests, allowing custom changes to request variables. Customized HTTP requests can be sent in quick succession and can be used to exploit race condition vulnerabilities.
+Burp Decoder: Automates text decoding. Decoded text can then be edited and re-encoded, allowing for enhanced customization in web requests. Currently, Burp can encode and decode in HTML, URL, Base64, ASCII hex, Hex, Octal, Binary, and GZIP. Burp's “smart decode” will automatically detect encoded data and recursively decode it as much as it can.
+Burp Sequencer: Analyzes an application-generated token variable across repeated HTTP requests to determine pseudorandomness predictability strength.
+Burp Comparer: Allows users to compare content found between two different HTTP requests or HTTP responses.
+Burp Extender: See the Burp Extender section below; certain Burp Suite plugins are limited to only interact with Professional edition.
+
+
+=== Professional Edition ===
+Burp Suite's Professional edition includes all Community features plus those listed below.
+
+Burp Scanner: Automates report auditing and/or web crawling for HTTP captured requests/responses. Uses internal rules to audit contents from intercepted HTTP responses in order to search for vulnerable response values. Capacitates users to customize scanners' speeds and findings coverage.
+Burp Dashboard: Displays findings results and categorizes issues based on severity. Detailed descriptions and remediation steps may be provided based on what type of finding.
+Burp Intruder: Similarly to Burp Repeater at a broader extent, grants users the means to send multiple parallel HTTP requests with changes to specified request variables.
+Burp Collaborator: Simulates C2 Server hosting to attempt external service interaction and Out-of-Band attacks.
+Burp Organizer: Allows users to curate selected HTTP requests/responses into a saved collection.
+Burp Infiltrator: An IAST agent scripted to automate interactive/runtime scanning and communicate results through the Burp Collaborator feature.
+Burp Clickbandit: A tool to concept proof to test clickjacking attacks against web applications' front-end HTML and JavaScript files.
+File Saving: Professional edition allows users to save their projects as ".burp" files.
+
+
+=== Burp Extender ===
+BApps
+Burp Suite offers an extension store where users can upload and download plugins for functionalities not supported natively. Different plugins alter in functionality, ranging from adjustments for UI readability, additions to scanner rules, and implementations of new analysis-based features.
+Burp Suite's extension API is open-source. Support for Java plugins is natively supported, while extensions which use Python and Ruby require users to download JAR files for Jython and JRuby respectively.
+Many Burp plugins have also been created by Portswigger employees as a means of developing proof-of-concepts for research conducted by the company. Examples of these include extensions created by James Kettle, Portswigger's Director of Research, including Backslash Powered Scanner, Param Miner, and HTTP Request Smuggler.
+
+
+==== BChecks ====
+BChecks were added to Burp Suite in June 2023 as a means of permitting users to create and customize their own scanner rules. A curated collection of BChecks are maintained by Portswigger through an open-source GitHub project.
+
+
+==== Bambdas ====
+Users can write Java scripts to create custom HTTP request/response index filtering in Burp Suite's proxy HTTP History, WebSocket History, and Logger lists.
+
+
+== See also ==
+Application security
+Dynamic application security testing
+Vulnerability assessment
+Information technology security assessment
+ZAP
+Web crawler
+Web proxy servers
+
+
+== References ==
+
+
+== External links ==
+Official website

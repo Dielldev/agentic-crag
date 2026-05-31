@@ -1,0 +1,57 @@
+Title: OWASP
+
+Summary:
+OWASP, the Open Worldwide Application Security Project (formerly Open Web Application Security Project), is an online community that publishes open-source information and resources on IoT, system software and web application security. It is led by a non-profit called The OWASP Foundation. 
+
+Content:
+
+== History ==
+Mark Curphey started OWASP on September 9, 2001. Jeff Williams served as the volunteer Chair of OWASP from late 2003 until September 2011. As of 2015, Matt Konda chaired the Board. The OWASP Foundation, a 501(c)(3) non-profit organization in the US established in 2004, supports the OWASP infrastructure and projects. Since 2011, OWASP is also registered as a non-profit organization in Belgium under the name of OWASP Europe VZW. In February 2023, it was reported by Bil Corry, a OWASP Foundation Global Board of Directors officer, on Twitter that the board had voted for renaming from the Open Web Application Security Project to its current name, replacing Web with Worldwide. In May 2023, the OWASP Gen AI Security Project was started to expand the scope of the OWASP Top 10 List to document the most critical risks associated with LLMs. 
+
+
+== Resources ==
+
+
+=== Tools ===
+OWASP ZAP: a penetration testing tool.
+Webgoat: a deliberately insecure web application created by OWASP as a guide for secure programming practices.
+
+
+=== Publications ===
+OWASP Top Ten
+The "Top Ten", first published in 2003, is an annual listing of critical application security risks. Many standards, books, tools, and many organizations reference the Top 10 project, including MITRE, PCI DSS, the Defense Information Systems Agency (DISA-STIG), and the United States Federal Trade Commission.
+OWASP Development Guide
+OWASP Testing Guide
+OWASP Code Review Guide
+OWASP Top 10 Incident Response Guidance.
+
+
+=== Models and standards ===
+OWASP Software Assurance Maturity Model
+OWASP Application Security Verification Standard (ASVS): A standard for performing application-level security verifications.
+
+
+=== Other projects ===
+OWASP XML Security Gateway (XSG) Evaluation Criteria Project.
+OWASP AppSec Pipeline
+OWASP Automated Threats to Web Applications
+OWASP API Security Project
+OWASP AI Maturity Assessment Project (AIMA)
+
+
+=== Certifications ===
+OWASP offers several professional security certifications focused on web application security, including the OWASP Top 10 certification which validates knowledge of the most critical web application security risks, the OWASP Application Security Verification Standard (ASVS) certification for secure coding practices, the OWASP Software Assurance Maturity Model (SAMM) certification for organizational security maturity assessment, and the OWASP Security Knowledge Framework (SKF) certification for security awareness training. These certifications help professionals demonstrate expertise in secure development, testing, and application security management across different organizational roles and technical disciplines.
+
+
+== See also ==
+Open Source Security Foundation
+Application security
+Mobile security
+Common Weakness Enumeration
+
+
+== References ==
+
+
+== External links ==
+Official website
