@@ -16,12 +16,29 @@ from poor results before generating answers. Built with LangGraph as a stateful 
 
 ## Project Structure
 app/graph/      → workflow.py, nodes.py, routing.py, state.py
-app/agents/     → retriever, evaluator, rewriter, web_search, generator
+app/agents/     → retriever, evaluator, rewriter, web_search, generator, verifier
 app/vectorstore/→ embeddings, ingestion, database
 app/api/        → main.py (FastAPI entrypoint)
 app/            → llm_client.py (shared Groq client), config.py, logger.py
-scripts/        → fetch_wikipedia.py (data ingestion)
+scripts/        → cli.py (interactive CLI), fetch_wikipedia.py (data ingestion)
 data/raw/       → fetched source .txt articles (the ingestion source)
+
+## CLI (scripts/cli.py)
+Interactive shell — run with `python scripts/cli.py`.
+
+Commands:
+- `query <question>` — run the full CRAG pipeline; shows answer with route, score, and grounding status
+- `history`          — table of last 10 queries (route / score / verified)
+- `clear`            — reprint banner and clear screen
+- `exit`             — quit
+
+Features:
+- Gradient ASCII banner (blue → purple → pink)
+- Spinner thread while the pipeline runs (suppresses log noise to terminal)
+- Per-answer metadata: sources, route (vector-only / vector+rewrite / web-search), score 0-100, verified ✓/✗, elapsed time
+- Grounding warning (⚠) when verifier marks answer ungrounded
+- Client-side rate limiter (4 queries / 60s) to stay within Groq free tier
+- All log output silenced from console during query; full trace written to logs/crag.log
 
 ## Agents & Responsibilities
 1. retriever.py    — Qdrant vector search (client.query_points), returns top-k RetrievedChunk
